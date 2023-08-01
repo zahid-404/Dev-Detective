@@ -34,15 +34,20 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
 
-  <body>
+  <body class="bg-lm-bg text-[13px] text-lm-text w-full relative h-screen">
     <!-- Main container -->
-    <div class="container">
+    <div
+      class="container w-[327px] md:w-[573px] xl:w-[730px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-[36px]"
+    >
       <!-- Header section -->
-      <header class="header">
+      <header class="header flex justify-between items-center">
         <!-- Title -->
         <h1 class="title">DevDetective</h1>
         <!-- Dark mode toggle container -->
-        <div id="btn-mode">
+        <div
+          id="btn-mode"
+          class="flex justify-between items-center w-[90px] tracking-[2.5px] text-lm-text font-bold hover:cursor-pointer"
+        >
           <!-- Dark mode text -->
           <p id="mode-text">DARK</p>
           <!-- Dark mode icon container -->
@@ -55,53 +60,82 @@
       <!-- Main content section -->
       <main>
         <!-- App container -->
-        <div id="app">
+        <div id="app" class="w-full flex flex-col gap-4 md:gap-6">
           <!-- Search bar container -->
-          <div class="searchbar-container active">
+          <div
+            class="searchbar-container active relative bg-lm-bg-content rounded-[15px] shadow-lm-shadow flex h-full p-1.5 md:p-[10px] justify-between items-center bg-[url(./assets/images/search-icon.svg)] bg-no-repeat"
+          >
             <!-- Search input field -->
             <input
               type="search"
               name="user-input"
               id="input"
+              class="border-none w-[80%] md:w-3/4 xl:w-[65%] md:text-[18px] outline-none bg-none text-lm-text pl-[50px]"
               placeholder="Enter a GitHub username..."
               required
             />
             <!-- Error message container -->
-            <div class="error">
+            <div
+              class="error absolute text-red-600 font-bold right-[10px] -top-[25px] md:-top-[30px] xl:top-1/2 xl:right-[20%] xl:-translate-y-1/2 md:text-[15px] xl:text-[15px]"
+            >
               <!-- No search results message -->
               <p id="no-results">no search results</p>
             </div>
             <!-- Search button -->
-            <button class="btn-search" id="submit">Search</button>
+            <button
+              class="btn-search min-w-[84px] py-3 md:py-[14px] px-4 md:px-7 bg-btn border-none rounded-[10px] text-white text-[14px] md:text-base font-bold hover:cursor-pointer hover:bg-btn-hover"
+              id="submit"
+            >
+              Search
+            </button>
           </div>
           <!-- Profile container -->
-          <div class="profile-container">
+          <div
+            class="profile-container xl:relative bg-lm-bg-content rounded-[15px] shadow-lm-shadow p-6 md:p-10"
+          >
             <!-- Profile content wrapper -->
-            <div class="profile-content">
+            <div
+              class="profile-content xl:w-[480px] xl:ml-auto flex flex-col gap-6 md:gap-[30px] xl:gap-4 justify-evenly"
+            >
               <!-- Profile header -->
-              <div class="profile-header">
+              <div class="profile-header flex gap-5 mb-[10px] md:mb-0">
                 <!-- User avatar -->
-                <img id="avatar" src="#" alt="" />
+                <img
+                  id="avatar"
+                  class="w-[70px] md:w-[117px] rounded-[90px] xl:absolute xl:left-0 xl:ml-[40px]"
+                  src="#"
+                  alt=""
+                />
                 <!-- Profile information wrapper -->
-                <div class="profile-info-wrapper">
+                <div
+                  class="profile-info-wrapper flex flex-col xl:w-full xl:flex-row justify-between md:justify-center xl:justify-between"
+                >
                   <!-- Profile name and link to GitHub profile -->
-                  <div class="profile-name">
-                    <h2 id="name"></h2>
+                  <div
+                    class="profile-name flex flex-col justify-between xl:gap-[2px]"
+                  >
+                    <h2
+                      id="name"
+                      class="text-[16px] md:text-[26px] font-bold text-lm-text-alt"
+                    ></h2>
                     <a
                       href="#"
                       target="_blank"
                       rel="noopener noreferrer"
                       id="user"
+                      class="text-btn md:text-base"
                     ></a>
                   </div>
                   <!-- Date information -->
-                  <p id="date"></p>
+                  <p id="date" class="md:text-[15px] xl:pt-[10px]"></p>
                 </div>
               </div>
               <!-- User bio -->
-              <p id="bio"></p>
+              <p id="bio" class="leading-[25px] opacity-75 md:text-[15px]"></p>
               <!-- Profile statistics wrapper -->
-              <div class="profile-stats-wrapper">
+              <div
+                class="profile-stats-wrapper flex justify-between bg-lm-bg text-center rounded-[10px] p-[18px] md:py-[18px] md:px-8 xl:my-5 xl:mx-0"
+              >
                 <!-- Number of repositories -->
                 <div class="profile-stat">
                   <p class="stat-title">Repos</p>
@@ -119,7 +153,9 @@
                 </div>
               </div>
               <!-- Additional profile information section -->
-              <div class="profile-bottom-wrapper">
+              <div
+                class="profile-bottom-wrapper flex flex-col md:flex-row md:flex-wrap justify-between gap-y-4 gap-x-0"
+              >
                 <!-- Location information -->
                 <div class="profile-info">
                   <div class="bottom-icons">

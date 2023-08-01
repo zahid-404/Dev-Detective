@@ -5,3 +5,65 @@
 * {
   @apply m-0 p-0 box-border font-myfont;
 }
+
+.searchbar-container {
+  background-position-x: 24px;
+  background-position-y: center;
+  background-size: 20px;
+}
+
+#input::placeholder {
+  @apply text-lm-text -tracking-[0.5px] text-[13px] md:text-[18px];
+}
+
+.searchbar-container img {
+  @apply h-[20px] w-[20px] px-10 py-0 pl-16;
+}
+
+.btn-search:active {
+  @apply scale-[0.975];
+}
+
+.profile-stat {
+  @apply flex flex-col w-full gap-2 md:text-start;
+}
+
+.stat-title {
+  @apply text-[11px] md:text-[13px];
+}
+
+.stat-value {
+  @apply text-base font-bold text-lm-text-alt md:text-[22px];
+}
+
+.profile-info {
+  @apply w-1/2 md:w-[47.5%] md:text-[15px] flex gap-[14px] justify-center items-center;
+}
+
+.bottom-icons {
+  @apply w-[20px] brightness-100;
+}
+
+.profile-info p {
+  @apply break-words;
+}
+
+.profile-info a {
+  @apply break-all text-lm-text;
+}
+
+.dm-text {
+  color: var(--dm-text);
+}
+
+.dm-bg {
+  background-color: var(--dm-bg);
+}
+
+.dm-bg-sec {
+  background-color: var(--dm-bg-content);
+}
+
+.active {
+  @apply shadow-lm-shadow;
+}
