@@ -32,8 +32,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/assets/index-a80e69ab.js"></script>
-    <link rel="stylesheet" href="/assets/index-349f718f.css">
+    <script type="module" crossorigin src="/assets/index-cc5e5207.js"></script>
+    <link rel="stylesheet" href="/assets/index-5296b5a1.css">
   </head>
 
   <body class="bg-lm-bg text-[13px] text-lm-text w-full relative h-screen">
@@ -44,7 +44,7 @@
       <!-- Header section -->
       <header class="header flex justify-between items-center">
         <!-- Title -->
-        <h1 class="title">DevDetective</h1>
+        <h1 class="title text-[26px] font-extrabold">DevDetective</h1>
         <!-- Dark mode toggle container -->
         <div
           id="btn-mode"
@@ -65,14 +65,14 @@
         <div id="app" class="w-full flex flex-col gap-4 md:gap-6">
           <!-- Search bar container -->
           <div
-            class="searchbar-container active relative bg-lm-bg-content rounded-[15px] shadow-lm-shadow flex h-full p-1.5 md:p-[10px] justify-between items-center bg-[url(./assets/images/search-icon.svg)] bg-no-repeat"
+            class="searchbar-container active relative bg-lm-bg-content bg-[url('./assets/images/search-icon.svg')] rounded-[15px] flex h-full p-1.5 md:p-[10px] justify-between items-center bg-no-repeat"
           >
             <!-- Search input field -->
             <input
               type="search"
               name="user-input"
               id="input"
-              class="border-none w-[80%] md:w-3/4 xl:w-[65%] md:text-[18px] outline-none bg-none text-lm-text pl-[50px]"
+              class="w-[80%] text-lm-text border-none outline-none bg-none pl-[50px]"
               placeholder="Enter a GitHub username..."
               required
             />
@@ -93,7 +93,7 @@
           </div>
           <!-- Profile container -->
           <div
-            class="profile-container xl:relative bg-lm-bg-content rounded-[15px] shadow-lm-shadow p-6 md:p-10"
+            class="profile-container xl:relative bg-lm-bg-content rounded-[15px] p-6 md:p-10"
           >
             <!-- Profile content wrapper -->
             <div
