@@ -32,11 +32,11 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/assets/index-cc5e5207.js"></script>
-    <link rel="stylesheet" href="/assets/index-5296b5a1.css">
+    <script type="module" crossorigin src="/assets/index-f0d5c2c1.js"></script>
+    <link rel="stylesheet" href="/assets/index-ea7c63b9.css">
   </head>
 
-  <body class="bg-lm-bg text-[13px] text-lm-text w-full relative h-screen">
+  <body class="text-[13px] w-full relative h-screen">
     <!-- Main container -->
     <div
       class="container w-[327px] md:w-[573px] xl:w-[730px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-[36px]"
@@ -48,7 +48,7 @@
         <!-- Dark mode toggle container -->
         <div
           id="btn-mode"
-          class="flex justify-between items-center w-[90px] tracking-[2.5px] text-lm-text font-bold hover:cursor-pointer"
+          class="flex justify-between items-center w-[90px] tracking-[2.5px] font-bold hover:cursor-pointer"
         >
           <!-- Dark mode text -->
           <p id="mode-text">DARK</p>
@@ -65,14 +65,14 @@
         <div id="app" class="w-full flex flex-col gap-4 md:gap-6">
           <!-- Search bar container -->
           <div
-            class="searchbar-container active relative bg-lm-bg-content bg-[url('./assets/images/search-icon.svg')] rounded-[15px] flex h-full p-1.5 md:p-[10px] justify-between items-center bg-no-repeat"
+            class="searchbar-container active relative bg-[url('./assets/images/search-icon.svg')] rounded-[15px] flex h-full p-1.5 md:p-[10px] justify-between items-center bg-no-repeat"
           >
             <!-- Search input field -->
             <input
               type="search"
               name="user-input"
               id="input"
-              class="w-[80%] text-lm-text border-none outline-none bg-none pl-[50px]"
+              class="w-[80%] border-none outline-none bg-none pl-[50px] md:text-[18px]"
               placeholder="Enter a GitHub username..."
               required
             />
@@ -92,9 +92,7 @@
             </button>
           </div>
           <!-- Profile container -->
-          <div
-            class="profile-container xl:relative bg-lm-bg-content rounded-[15px] p-6 md:p-10"
-          >
+          <div class="profile-container xl:relative rounded-[15px] p-6 md:p-10">
             <!-- Profile content wrapper -->
             <div
               class="profile-content xl:w-[480px] xl:ml-auto flex flex-col gap-6 md:gap-[30px] xl:gap-4 justify-evenly"
@@ -118,7 +116,7 @@
                   >
                     <h2
                       id="name"
-                      class="text-[16px] md:text-[26px] font-bold text-lm-text-alt"
+                      class="text-[16px] md:text-[26px] font-bold"
                     ></h2>
                     <a
                       href="#"
@@ -136,7 +134,7 @@
               <p id="bio" class="leading-[25px] opacity-75 md:text-[15px]"></p>
               <!-- Profile statistics wrapper -->
               <div
-                class="profile-stats-wrapper flex justify-between bg-lm-bg text-center rounded-[10px] p-[18px] md:py-[18px] md:px-8 xl:my-5 xl:mx-0"
+                class="profile-stats-wrapper flex justify-between text-center rounded-[10px] p-[18px] md:py-[18px] md:px-8 xl:my-5 xl:mx-0"
               >
                 <!-- Number of repositories -->
                 <div class="profile-stat">
