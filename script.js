@@ -71,7 +71,7 @@ btnmode.addEventListener("click", function () {
   }
 });
 
-// Functions
+// API call
 function getUserData(gitUrl) {
   fetch(gitUrl)
     .then((response) => response.json())
@@ -83,6 +83,8 @@ function getUserData(gitUrl) {
       throw error;
     });
 }
+
+// function for updating info on UI
 function updateProfile(data) {
   if (data.message !== "Not Found") {
     noresults.style.display = "none";
@@ -155,6 +157,7 @@ if (localStorage.getItem("dark-mode") === null) {
   }
 }
 
+// function for toggle light mode
 function darkModeProperties() {
   root.setProperty("--lm-bg", "#141D2F");
   root.setProperty("--lm-bg-content", "#1E2A47");
@@ -167,6 +170,8 @@ function darkModeProperties() {
   darkMode = true;
   localStorage.setItem("dark-mode", true);
 }
+
+// function for toggle light mode
 function lightModeProperties() {
   root.setProperty("--lm-bg", "#F6F8FF");
   root.setProperty("--lm-bg-content", "#FEFEFE");
@@ -179,6 +184,7 @@ function lightModeProperties() {
   darkMode = false;
   localStorage.setItem("dark-mode", false);
 }
+
 profilecontainer.classList.toggle("active");
 searchbar.classList.toggle("active");
 getUserData(url + "zahid-404");
